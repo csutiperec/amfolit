@@ -83,19 +83,15 @@ table {
 }
 
 nav{
-    clear: both;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+
 }
 nav ul{
     width: 100%;
     display: inline-block;
-    background-color: black;
+    	background-color: black;
 }
 nav ul li{
-    float: left;
+	display: inline-block;
     padding: 15px 0px;
 }
 nav ul li a{
@@ -108,13 +104,12 @@ nav ul li a:hover{
 }
 
 #index{
-    position: relative;
-    top: -3px;
+	background-image:url("resources/mainbgimg.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 600px;
 }
 #index h2{
-    position: absolute;
-    top: 8px;
-    left: 16px;
     font-size: 6vw;
     z-index:1;
     font-weight: bold;
@@ -127,16 +122,9 @@ nav ul li a:hover{
     font-size: 6vw;
     opacity:0.5;
 }
-#index img { 
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-}
 
 #grad1{
-    position: relative;
-    top: -6px;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-image: linear-gradient(rgb(78, 94, 139), rgb(129, 190, 232));
     /*background-image: linear-gradient(rgb(78, 94, 139) rgb(129, 190, 232));*/
@@ -148,29 +136,36 @@ nav ul li a:hover{
     top: -6px;
 }
 
-#us div{
-    margin-left: 20px;
+#us .flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#us .flex p {
+	text-align: justify;
+}
+
+#us .flex div {
+	margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
     max-width: 500px;
-    text-align:center;
 }
+
 #us img{
-    position: absolute;
-    right: 100px;
-    top:100px;
     max-width: 800px;
-    height: auto;
 }
 h2{
-    position: relative;
-    top: 8px;
-    left: 16px;
+	margin-left:16px;
     font-size: 6vw;
     z-index:1;
     font-weight: bold;
     opacity:0.5;
+}
+img{
+	width:100%;
 }
 
 @media screen and (max-width: 550px) {
