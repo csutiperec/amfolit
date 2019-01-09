@@ -12,6 +12,7 @@
                 $("#footerct").text("Copyright © "+today.getFullYear()+" Amfolit Kutató Nonprofit Kft.");
             });
         </script>
+        
     </head>
     
     <body>
@@ -21,12 +22,12 @@
         </div>
         
         <nav>
-            <ul>
-                <li><a href="#index">Főoldal</a></li>
-                <li><a href="#us">Rólunk</a></li>
-                <li><a href="#gallery">Galéria</a></li>
-                <li><a href="#contact">Elérhetőségünk</a></li>
-                <li><a href="#ref">Referenciáink</a></li>
+            <ul id="unorderedlist">
+                <li><a id="indexbttn">Főoldal</a></li>
+                <li><a id="usbttn">Rólunk</a></li>
+                <li><a id="gallerybttn">Galéria</a></li>
+                <li><a id="contactbttn">Elérhetőségünk</a></li>
+                <li><a id="refbttn">Referenciáink</a></li>
             </ul>
         </nav>
         
@@ -247,6 +248,33 @@
             <p id="footerct">Asd</p>
         </div>
         
-        
+        <script>
+
+                function onIndex(){
+                    window.scrollTo(0, document.getElementById("index").offsetTop-46);
+                }
+                document.getElementById("indexbttn").addEventListener("click", onIndex);
+    
+                function onUs(){
+                    window.scrollTo(0, document.getElementById("us").offsetTop-46);
+                }
+                document.getElementById("usbttn").addEventListener("click", onUs);
+    
+                function onGallery(){
+                    window.scrollTo(0, document.getElementById("gallery").offsetTop-46);
+                }
+                document.getElementById("gallerybttn").addEventListener("click", onGallery);
+    
+                function onContact(){
+                    window.scrollTo(0, document.getElementById("contact").offsetTop-46);
+                }
+                document.getElementById("contactbttn").addEventListener("click", onContact);
+    
+                function onRef(){
+                    window.scrollTo(0, document.getElementById("ref").offsetTop-46);
+                }
+                document.getElementById("refbttn").addEventListener("click", onRef);
+    
+            </script>
     </body>
 </html>
